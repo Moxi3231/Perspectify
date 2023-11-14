@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(request: NextRequest) {
-    return NextResponse.json({"ARGUMENTS":["hello world","hello world2"]})
+
     const jdata = await request.json();
 
     const article = jdata.articleTitle;
